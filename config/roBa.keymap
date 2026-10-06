@@ -98,7 +98,7 @@
             bindings = <
 &kp Q    &kp W         &kp E  &kp R           &kp T                                      &kp Y         &kp U  &kp I      &kp O    &kp P
 &kp A    &kp S         &kp D  &kp F           &kp G        &kp AT         &kp LBKT       &kp H         &kp J  &kp K      &kp L    &kp MINUS
-&kp Z    &kp X         &kp C  &kp V           &kp B        &to 7          &kp RBKT       &kp N         &kp M  &kp COMMA  &kp DOT  &kp LS(SLASH)
+&kp Z    &kp X         &kp C  &kp V           &kp B        &mo 7          &kp RBKT       &kp N         &kp M  &kp COMMA  &kp DOT  &kp LS(SLASH)
 &kp TAB  &kp LEFT_ALT  &mo 6  &kp LEFT_SHIFT  &lt 1 SPACE  &kp LCTRL      &kp BACKSPACE  &lt 2 RETURN                             &kp EXCL
             >;
 
@@ -172,10 +172,10 @@
 
         FF14-home {
             bindings = <
-&none    &none  &kp W  &kp R           &none                                &none            &kp N1  &kp N2  &kp N3     &kp N4
-&kp TAB  &kp A  &kp S  &kp D           &kp F      &none         &none       &kp KP_NUMBER_0  &kp N5  &kp N6  &kp N7     &kp N8
-&mo 10   &none  &none  &none           &none      &to 0         &none       &none            &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-&none    &none  &none  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT      &MB2_press  &kp SPACE                                   &none
+&kp ESCAPE  &none  &kp W  &kp R           &none                                &none            &kp N1  &kp N2  &kp N3     &kp N4
+&kp TAB     &kp A  &kp S  &kp D           &kp F      &none         &none       &kp KP_NUMBER_0  &kp N5  &kp N6  &kp N7     &kp N8
+&mo 10      &none  &none  &none           &none      &to 0         &none       &none            &kp N9  &kp N0  &kp MINUS  &kp EQUAL
+&none       &none  &none  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT      &MB2_press  &kp SPACE                                   &none
             >;
         };
 
