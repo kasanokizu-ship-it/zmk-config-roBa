@@ -62,6 +62,22 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        MB2_press: MB2sticky {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&mkp RCLK>, <&macro_tap>, <&tog 9>;
+
+            label = "MB2STICKY";
+        };
+
+        MB2_release: MB2_release {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_release>, <&mkp RCLK>, <&macro_tap>, <&tog 9>;
+
+            label = "MB2_RELEASE";
+        };
     };
 
     behaviors {
@@ -156,10 +172,19 @@
 
         FF14-home {
             bindings = <
-&none    &none  &kp W  &kp R           &none                              &none         &kp N1  &kp N2  &kp N3     &kp N4
-&kp TAB  &kp A  &kp S  &kp D           &none      &none         &none     &kp NUMBER_0  &kp N5  &kp N6  &kp N7     &kp N8
-&mo 9    &none  &none  &none           &none      &to 0         &none     &none         &kp N9  &kp N0  &kp MINUS  &kp CARET
-&none    &none  &none  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT      &mkp MB2  &kp SPACE                                &none
+&none    &none  &kp W  &kp R           &none                                &none         &kp N1  &kp N2  &kp N3     &kp N4
+&kp TAB  &kp A  &kp S  &kp D           &none      &none         &none       &kp NUMBER_0  &kp N5  &kp N6  &kp N7     &kp N8
+&mo 10   &none  &none  &none           &none      &to 0         &none       &none         &kp N9  &kp N0  &kp MINUS  &kp CARET
+&none    &none  &none  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT      &MB2_press  &kp SPACE                                &none
+            >;
+        };
+
+        layer_10 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                            &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans        &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans        &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &MB2_release  &trans                          &trans
             >;
         };
 
