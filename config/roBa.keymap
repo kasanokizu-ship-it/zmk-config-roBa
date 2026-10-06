@@ -175,7 +175,7 @@
 &kp ESCAPE  &none  &kp W  &kp R           &none                                &none            &kp N1  &kp N2  &kp N3     &kp N4
 &kp TAB     &kp A  &kp S  &kp D           &kp F      &none         &none       &kp KP_NUMBER_0  &kp N5  &kp N6  &kp N7     &kp N8
 &mo 10      &none  &none  &none           &none      &mo 7         &none       &none            &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-&none       &none  &none  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT      &MB2_press  &kp SPACE                                   &none
+&none       &none  &none  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT      &MB2_press  &kp SPACE                                   &mkp RCLK
             >;
         };
 
