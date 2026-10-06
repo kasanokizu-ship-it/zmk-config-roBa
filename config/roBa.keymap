@@ -107,7 +107,7 @@
 
         FUNCTION {
             bindings = <
-&kp LANGUAGE_5  &kp HOME  &kp UP    &kp END    &kp PG_UP                      &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&kp GRAVE       &kp HOME  &kp UP    &kp END    &kp PG_UP                      &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
 &kp LANGUAGE_4  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans      &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
 &trans          &trans    &trans    &trans     &trans     &trans      &trans  &trans  &trans  &trans  &trans  &kp F11
 &trans          &trans    &trans    &trans     &trans     &trans      &trans  &trans                          &kp F12
