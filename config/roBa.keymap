@@ -172,10 +172,10 @@
 
         FF14-home {
             bindings = <
-&kp ESCAPE  &none  &kp W  &kp R           &none                                &none            &kp N1  &kp N2  &kp N3     &kp N4
-&kp TAB     &kp A  &kp S  &kp D           &kp F      &none         &none       &kp KP_NUMBER_0  &kp N5  &kp N6  &kp N7     &kp N8
-&mo 10      &none  &none  &none           &none      &mo 7         &none       &none            &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-&none       &none  &none  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT      &MB2_press  &kp SPACE                                   &mkp RCLK
+&kp ESCAPE  &none  &kp W  &kp R           &none                                &none            &kp LS(LA(LC(N1)))  &kp LS(LA(LC(N2)))  &kp LS(LC(LA(N3)))     &kp LS(LA(LC(N4)))
+&kp TAB     &kp A  &kp S  &kp D           &kp F      &none         &mo 7       &kp KP_NUMBER_0  &kp LS(LA(LC(N5)))  &kp LS(LA(LC(N6)))  &kp LS(LA(LC(N7)))     &kp LS(LC(LA(N8)))
+&none       &none  &none  &none           &none      &none         &to 10      &none            &kp LS(LC(LA(N9)))  &kp LS(LA(LC(N0)))  &kp LS(LA(LC(MINUS)))  &kp LS(LA(LC(EQUAL)))
+&none       &none  &none  &kp LEFT_SHIFT  &kp LCTRL  &kp LALT      &MB2_press  &kp SPACE                                                                       &mkp RCLK
             >;
         };
 
@@ -190,10 +190,10 @@
 
         layer_9 {
             bindings = <
-&none  &none  &none  &none  &none                    &none  &kp F10  &kp F11  &none   &none
-&none  &none  &none  &none  &none  &none      &none  &none  &kp F1   &kp F2   &kp F3  &kp F4
-&none  &none  &none  &none  &none  &none      &none  &none  &kp F5   &kp F6   &kp F7  &kp F8
-&none  &none  &none  &none  &none  &none      &none  &none                            &kp F9
+&trans  &trans  &trans  &trans  &trans                         &trans  &kp F10  &kp F11  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans      &trans  &trans  &kp F1   &kp F2   &kp F3  &kp F4
+&trans  &trans  &trans  &trans  &trans     &trans      &trans  &trans  &kp F5   &kp F6   &kp F7  &kp F8
+&trans  &trans  &trans  &trans  &kp SPACE  &trans      &none   &trans                            &kp F9
             >;
         };
     };
